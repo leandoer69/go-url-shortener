@@ -109,3 +109,31 @@ func (s *Storage) DeleteURL(alias string) error {
 
 	return nil
 }
+
+func (s *Storage) UpdateURL(urlToUpdate, oldAlias, newAlias string) error {
+	const op = "storage.sqlite.UpdateURL"
+
+	stmt, err := s.db.Prepare("UPDATE url SET alias = (?) WHERE url = (?) AND alias = (?)")
+	if err != nil {
+		return fmt.Errorf("%s : %w", op, err)
+	}
+
+	res, err := stmt.Exec(newAlias, urlToUpdate, oldAlias)
+	if err != nil {
+		if sqliteErr, ok := err.(sqlite3.Error); ok && sqliteErr.ExtendedCode == sqlite3.ErrConstraintUnique {
+			return nil
+		}
+		return fmt.Errorf("%s : %w", op, err)
+	}
+
+	rowsAffected, err := res.RowsAffected()
+	if err != nil {
+		return fmt.Errorf("%s : %w", op, err)
+	}
+
+	if rowsAffected == 0 {
+		return storage.ErrUrlNotFound
+	}
+
+	return nil
+}

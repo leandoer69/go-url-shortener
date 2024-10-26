@@ -8,6 +8,7 @@ import (
 	"golang-url-shortener/internal/http-server/handlers/redirect"
 	"golang-url-shortener/internal/http-server/handlers/url/delete"
 	"golang-url-shortener/internal/http-server/handlers/url/save"
+	"golang-url-shortener/internal/http-server/handlers/url/update"
 	"golang-url-shortener/internal/http-server/middleware/logger"
 	"golang-url-shortener/internal/lib/logger/sl"
 	"golang-url-shortener/internal/storage/sqlite"
@@ -44,6 +45,7 @@ func main() {
 
 		r.Post("/", save.New(log, storage))
 		r.Delete("/{alias}", delete.New(log, storage))
+		r.Put("/", update.New(log, storage))
 	})
 
 	router.Get("/{alias}", redirect.New(log, storage))

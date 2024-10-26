@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dbd598f-8ce9-47d1-a0f4-454f5e14f17a" name="Changes" comment="deleted copy of gitignore" />
+    <list default="true" id="8dbd598f-8ce9-47d1-a0f4-454f5e14f17a" name="Changes" comment="init server">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/url-shortener/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/url-shortener/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/lib/random/random_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/lib/random/random_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +45,18 @@
     <setting file="file://$USER_HOME$/go/pkg/mod/golang.org/x/exp@v0.0.0-20231206192017-f3f8817b8deb/slog/attr.go" root0="SKIP_INSPECTION" />
     <setting file="file://$USER_HOME$/sdk/go1.20/src/database/sql/sql.go" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;minikube&quot;,
+      &quot;originalNamespace&quot;: &quot;default&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="minikube" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,45 +69,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/Глеб",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.goide.configuration.GoProjectSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Глеб/GolandProjects/golang-url-shortener&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoProjectSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Глеб\GolandProjects\golang-url-shortener\internal\http-server" />
       <recent name="C:\Users\Глеб\GolandProjects\golang-url-shortener\cmd\url-shortener" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestURLShortener_HappyPath in golang-url-shortener/tests">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$" />
-      <envs>
-        <env name="CONFIG_PATH" value="config/local.yaml" />
-        <env name="CGO_ENABLED" value="1" />
-      </envs>
-      <kind value="FILE" />
-      <package value="golang-url-shortener" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/cmd/url-shortener/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestNewRandomString in golang-url-shortener/internal/lib/random" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestUpdateURL in golang-url-shortener/internal/http-server/handlers/url/update">
+    <configuration name="TestNewRandomString in golang-url-shortener/internal/lib/random (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
       <working_directory value="$PROJECT_DIR$/internal/lib/random" />
       <root_directory value="$PROJECT_DIR$" />
@@ -100,6 +104,18 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestNewRandomString\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestNewRandomString/size=1 in golang-url-shortener/internal/lib/random" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-url-shortener" />
+      <working_directory value="$PROJECT_DIR$/internal/lib/random" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang-url-shortener/internal/lib/random" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestNewRandomString\E$/^\Qsize=1\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestURLShortener_HappyPath in golang-url-shortener/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -114,11 +130,36 @@
       <pattern value="^\QTestURLShortener_HappyPath\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestUpdateURL in golang-url-shortener/internal/http-server/handlers/url/update" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-url-shortener" />
+      <working_directory value="$PROJECT_DIR$/internal/http-server/handlers/url/update" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang-url-shortener/internal/http-server/handlers/url/update" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUpdateURL\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test golang-url-shortener/internal/lib/random" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-url-shortener" />
+      <working_directory value="$PROJECT_DIR$/internal/lib/random" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang-url-shortener/internal/lib/random" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestUpdateURL in golang-url-shortener/internal/http-server/handlers/url/update" />
+        <item itemvalue="Go Test.go test golang-url-shortener/internal/lib/random" />
+        <item itemvalue="Go Test.TestNewRandomString in golang-url-shortener/internal/lib/random (1)" />
+        <item itemvalue="Go Test.TestNewRandomString/size=1 in golang-url-shortener/internal/lib/random" />
         <item itemvalue="Go Test.TestURLShortener_HappyPath in golang-url-shortener/tests" />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestNewRandomString in golang-url-shortener/internal/lib/random" />
       </list>
     </recent_temporary>
   </component>
@@ -138,11 +179,22 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init server" />
     <MESSAGE value="deleted copy of gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted copy of gitignore" />
+    <MESSAGE value="init server" />
+    <option name="LAST_COMMIT_MESSAGE" value="init server" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/lib/random/random_test.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
