@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8dbd598f-8ce9-47d1-a0f4-454f5e14f17a" name="Changes" comment="init server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/url_shortener_test.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,31 +66,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Глеб/GolandProjects/golang-url-shortener&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoProjectSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/Глеб/GolandProjects/golang-url-shortener/tests/e2e",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.goide.configuration.GoProjectSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Глеб\GolandProjects\golang-url-shortener\tests\e2e" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Глеб\GolandProjects\golang-url-shortener\internal\http-server" />
       <recent name="C:\Users\Глеб\GolandProjects\golang-url-shortener\cmd\url-shortener" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestDeleteSuccess in golang-url-shortener/tests/integration">
+  <component name="RunManager" selected="Go Test.TestSaveAndDeleteSuccess in golang-url-shortener/tests/e2e">
     <configuration name="TestDeleteSuccess in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
       <working_directory value="$PROJECT_DIR$/tests/integration" />
@@ -108,30 +107,30 @@
       <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestDeleteSuccess\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSaveFailed_ErrorAlreadyExists in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSaveAndDeleteSuccess in golang-url-shortener/tests/e2e" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/tests/integration" />
-      <parameters value=" -testify.m ^TestSaveFailed_ErrorAlreadyExists$" />
+      <working_directory value="$PROJECT_DIR$/tests/e2e" />
+      <parameters value=" -testify.m ^TestSaveAndDeleteSuccess$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/tests/integration" />
+      <package value="golang-url-shortener/tests/e2e" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestSaveFailed_ErrorAlreadyExists\E$" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestSaveAndDeleteSuccess\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSaveSuccess in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSaveAndRedirectSuccess in golang-url-shortener/tests/e2e" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/tests/integration" />
-      <parameters value=" -testify.m ^TestSaveSuccess$" />
+      <working_directory value="$PROJECT_DIR$/tests/e2e" />
+      <parameters value=" -testify.m ^TestSaveAndRedirectSuccess$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/tests/integration" />
+      <package value="golang-url-shortener/tests/e2e" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestSaveSuccess\E$" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestSaveAndRedirectSuccess\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestUpdateFailed_ErrorUrlNotFound in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -162,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSaveAndDeleteSuccess in golang-url-shortener/tests/e2e" />
+        <item itemvalue="Go Test.TestSaveAndRedirectSuccess in golang-url-shortener/tests/e2e" />
         <item itemvalue="Go Test.TestDeleteSuccess in golang-url-shortener/tests/integration" />
         <item itemvalue="Go Test.TestUpdateFailed_ErrorUrlNotFound in golang-url-shortener/tests/integration" />
         <item itemvalue="Go Test.TestUpdateSuccess in golang-url-shortener/tests/integration" />
-        <item itemvalue="Go Test.TestSaveFailed_ErrorAlreadyExists in golang-url-shortener/tests/integration" />
-        <item itemvalue="Go Test.TestSaveSuccess in golang-url-shortener/tests/integration" />
       </list>
     </recent_temporary>
   </component>
