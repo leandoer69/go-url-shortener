@@ -137,3 +137,19 @@ func (s *Storage) UpdateURL(urlToUpdate, oldAlias, newAlias string) error {
 
 	return nil
 }
+
+func (s *Storage) ClearDB() error {
+	const op = "storage.sqlite.ClearDB"
+
+	stmt, err := s.db.Prepare("DELETE FROM url")
+	if err != nil {
+		return fmt.Errorf("%s : %w", op, err)
+	}
+
+	_, err = stmt.Exec()
+	if err != nil {
+		return fmt.Errorf("%s : %w", op, err)
+	}
+
+	return nil
+}

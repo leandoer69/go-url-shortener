@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8dbd598f-8ce9-47d1-a0f4-454f5e14f17a" name="Changes" comment="init server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/url-shortener/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/url-shortener/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/lib/random/random_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/lib/random/random_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/url_shortener_test.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,73 +94,79 @@
       <recent name="C:\Users\Глеб\GolandProjects\golang-url-shortener\cmd\url-shortener" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestUpdateURL in golang-url-shortener/internal/http-server/handlers/url/update">
-    <configuration name="TestNewRandomString in golang-url-shortener/internal/lib/random (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestDeleteSuccess in golang-url-shortener/tests/integration">
+    <configuration name="TestDeleteSuccess in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/internal/lib/random" />
+      <working_directory value="$PROJECT_DIR$/tests/integration" />
+      <parameters value=" -testify.m ^TestDeleteSuccess$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/internal/lib/random" />
+      <package value="golang-url-shortener/tests/integration" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestNewRandomString\E$" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestDeleteSuccess\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNewRandomString/size=1 in golang-url-shortener/internal/lib/random" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSaveFailed_ErrorAlreadyExists in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/internal/lib/random" />
+      <working_directory value="$PROJECT_DIR$/tests/integration" />
+      <parameters value=" -testify.m ^TestSaveFailed_ErrorAlreadyExists$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/internal/lib/random" />
+      <package value="golang-url-shortener/tests/integration" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestNewRandomString\E$/^\Qsize=1\E$" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestSaveFailed_ErrorAlreadyExists\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestURLShortener_HappyPath in golang-url-shortener/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSaveSuccess in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/tests" />
+      <working_directory value="$PROJECT_DIR$/tests/integration" />
+      <parameters value=" -testify.m ^TestSaveSuccess$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/tests" />
+      <package value="golang-url-shortener/tests/integration" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestURLShortener_HappyPath\E$" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestSaveSuccess\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestUpdateURL in golang-url-shortener/internal/http-server/handlers/url/update" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUpdateFailed_ErrorUrlNotFound in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/internal/http-server/handlers/url/update" />
+      <working_directory value="$PROJECT_DIR$/tests/integration" />
+      <parameters value=" -testify.m ^TestUpdateFailed_ErrorUrlNotFound$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/internal/http-server/handlers/url/update" />
+      <package value="golang-url-shortener/tests/integration" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUpdateURL\E$" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestUpdateFailed_ErrorUrlNotFound\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test golang-url-shortener/internal/lib/random" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUpdateSuccess in golang-url-shortener/tests/integration" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang-url-shortener" />
-      <working_directory value="$PROJECT_DIR$/internal/lib/random" />
+      <working_directory value="$PROJECT_DIR$/tests/integration" />
+      <parameters value=" -testify.m ^TestUpdateSuccess$" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang-url-shortener/internal/lib/random" />
+      <package value="golang-url-shortener/tests/integration" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+      <pattern value="^\QTestUrlShortenerSuite\E$/^\QTestUpdateSuccess\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestUpdateURL in golang-url-shortener/internal/http-server/handlers/url/update" />
-        <item itemvalue="Go Test.go test golang-url-shortener/internal/lib/random" />
-        <item itemvalue="Go Test.TestNewRandomString in golang-url-shortener/internal/lib/random (1)" />
-        <item itemvalue="Go Test.TestNewRandomString/size=1 in golang-url-shortener/internal/lib/random" />
-        <item itemvalue="Go Test.TestURLShortener_HappyPath in golang-url-shortener/tests" />
+        <item itemvalue="Go Test.TestDeleteSuccess in golang-url-shortener/tests/integration" />
+        <item itemvalue="Go Test.TestUpdateFailed_ErrorUrlNotFound in golang-url-shortener/tests/integration" />
+        <item itemvalue="Go Test.TestUpdateSuccess in golang-url-shortener/tests/integration" />
+        <item itemvalue="Go Test.TestSaveFailed_ErrorAlreadyExists in golang-url-shortener/tests/integration" />
+        <item itemvalue="Go Test.TestSaveSuccess in golang-url-shortener/tests/integration" />
       </list>
     </recent_temporary>
   </component>
